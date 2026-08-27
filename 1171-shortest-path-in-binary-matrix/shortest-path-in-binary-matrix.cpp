@@ -4,7 +4,7 @@ public:
         if(grid[0][0] || grid.back().back()) return -1;
         int res=2,len=1,maxX=grid[0].size()-1,maxY=grid.size()-1;
         queue<pair<int,int>> q;
-        if(!maxX && !maxY) return 1-(grid[0][0]<<1);
+       if(maxX == 0 && maxY == 0) return 1;
         q.push({0,0});
         grid[0][0]=-1;
         while(len){
