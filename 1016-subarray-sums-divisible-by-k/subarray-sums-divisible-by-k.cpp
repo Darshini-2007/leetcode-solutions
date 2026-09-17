@@ -5,8 +5,8 @@ public:
         int pm=0,ans=0;
         vector<int> m(k);
         m[0]=1;
-        for(int n:nums){
-            pm=(pm+n%k+k)%k;
+        for(int num:nums){
+            pm=(pm+num%k+k)%k;
             ans+=m[pm];
             m[pm]++;
         }
